@@ -34,4 +34,79 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* code starts here  */
+/* global values */
+* {
+  font-family: "Darker Grotesque", sans-serif;
+}
+:root {
+  --gold: #f6d88c;
+  --black: #181817;
+  --gray: #6f6f6f;
+  --beige: #f8f3ec;
+}
+body {
+  background-color: var(--beige);
+}
+/* Header */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  min-height: 70px;
+}
+.logo,
+.logo a {
+  color: var(--black);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 40px;
+}
+.social-links {
+  display: none;
+}
+ul a {
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 22px;
+}
+/* hamburger menu styling */
+.nav-links {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.nav-links li {
+  margin: 16px 0;
+}
+.nav-links.active {
+  left: 0;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+}
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+/* desktop navbar */
+@media (min-width: 992px) {
+}
