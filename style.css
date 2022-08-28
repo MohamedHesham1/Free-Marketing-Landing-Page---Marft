@@ -96,6 +96,8 @@ hr {
 }
 .nav-links.active {
   left: 0;
+  background-color: var(--beige);
+  height: 100vh;
 }
 .bar {
   display: block;
@@ -112,6 +114,9 @@ hr {
 }
 .hamburger-menu.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+.scroll-hidden {
+  overflow: hidden;
 }
 /* desktop navbar */
 @media (min-width: 992px) {
@@ -146,12 +151,112 @@ hr {
     align-self: center;
     order: 2;
   }
-  .logo:hover {
-    scale: 1.1;
-  }
+
   hr {
     display: block;
     border-top: 1px solid var(--gray);
     width: 85%;
+  }
+}
+/* main */
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+/*  Hero section */
+.hero-main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 1rem 0;
+  text-align: center;
+}
+.hero-main p {
+  width: 80%;
+  font-size: 1.4rem;
+}
+.hero-img {
+  display: none;
+}
+.hero-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--black);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: -0.02em;
+}
+.btn-rating-area {
+  display: flex;
+  padding-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+.get-started-btn {
+  background-color: var(--gold);
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  text-align: center;
+  line-height: 48px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+}
+.get-started-btn:hover {
+  color: #120c51;
+  background-color: #dfd0d6;
+}
+/* Hero section desktop */
+@media (min-width: 992px) {
+  .hero-section {
+    display: flex;
+    height: 765px;
+    justify-content: space-around;
+    gap: 6rem;
+  }
+  .hero-main {
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: start;
+    align-items: flex-start;
+  }
+  .hero-header {
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 73px;
+  }
+  .hero-header p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .btn-rating-area {
+    justify-content: flex-start;
+    padding: 0;
+    gap: 2rem;
+  }
+  .get-started-btn {
+    width: 200px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+  }
+  .rating-img {
+    width: 183px;
+    height: 53.27px;
+    align-self: center;
+  }
+  .hero-img {
+    display: flex;
+    width: 570px;
+    height: 653px;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-self: center;
   }
 }
