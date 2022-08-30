@@ -338,10 +338,10 @@ main {
     flex-flow: row;
     padding: 2rem 0;
     gap: 1rem;
-    width: 1170px;
+    max-width: 1170px;
   }
   .trust-us-content {
-    width: 344px;
+    max-width: 344px;
     text-align: left;
     border-left: 5px solid #f6d88c;
     padding-left: 1.9rem;
@@ -372,7 +372,7 @@ main {
   }
 }
 /* take it to the next level */
-.take-it-next-level {
+.take-it-next-level-section {
   background-color: var(--black);
 }
 .next-level-container {
@@ -425,12 +425,16 @@ main {
 }
 .about-us-btn:hover {
   background-color: var(--gold);
-  font-weight: 00;
+  font-weight: 700;
 }
 /* next level desktop */
 @media (min-width: 992px) {
-  .take-it-next-level {
+  .take-it-next-level-section {
     background-color: var(--black);
+    height: 889px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .next-level-container {
     display: flex;
@@ -470,6 +474,7 @@ main {
   }
   .next-level-list li {
     padding-left: 39px;
+    background-position: left 11px;
   }
   .about-us-btn {
     max-width: 186px;
@@ -483,3 +488,48 @@ main {
     align-self: flex-start;
   }
 }
+/* video section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 756px;
+  background-image: url("assets/imgs/laptop-cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 100%;
+}
+.play-btn {
+  width: 153px;
+  height: 153px;
+  border-radius: 50%;
+  background-color: var(--beige);
+  border: none;
+  cursor: pointer;
+}
+.play-btn:hover {
+  background-color: var(--gold);
+}
+.play-icon:hover {
+  scale: 1.1;
+}
+/*  video section desktop */
+@media (min-width: 992px) {
+  .video-section {
+    background-position: center center;
+  }
+}
+/* what we provide section */
+.what-we-provide-section {
+  background-color: var(--beige);
+  /* height: 905px; */
+}
+.provide-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* font-weight: 600;
+font-size: 2.7rem;
+line-height: 2rem; */
