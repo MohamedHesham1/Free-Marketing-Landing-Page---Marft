@@ -169,8 +169,6 @@ hr {
   }
 }
 /* main */
-main {
-}
 
 /*  Hero section */
 .hero-section {
@@ -501,10 +499,10 @@ main {
   min-height: 100%;
 }
 .play-btn {
-  width: 153px;
-  height: 153px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  background-color: var(--beige);
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   cursor: pointer;
 }
@@ -519,17 +517,128 @@ main {
   .video-section {
     background-position: center center;
   }
+  .play-btn {
+    width: 153px;
+    height: 153px;
+  }
 }
+
 /* what we provide section */
 .what-we-provide-section {
   background-color: var(--beige);
-  /* height: 905px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 0;
 }
 .provide-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 2rem;
 }
-/* font-weight: 600;
-font-size: 2.7rem;
-line-height: 2rem; */
+.provide-text h2 {
+  font-weight: 600;
+  font-size: 2.7rem;
+}
+.provide-text p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+/*      what we provide cards */
+.shape-card {
+  background-color: #eae4dc;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.provide-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.provide-cards-container h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.provide-cards-container a {
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: underline;
+}
+.provide-cards-container p {
+  line-height: 1rem;
+}
+.shape-card {
+  padding: 2rem;
+}
+.provide-cards-container img {
+  width: 47px;
+  height: 47px;
+}
+/* what we provide desktop */
+@media (min-width: 992px) {
+  .what-we-provide-section {
+    height: 905px;
+  }
+  .provide-container {
+    height: 644px;
+  }
+  .provide-cards-container {
+    flex-direction: row;
+  }
+  .shape-card {
+    background-color: #eae4dc;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: left;
+    padding: 3rem;
+    width: 370px;
+  }
+  /*  text styling */
+  .provide-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+  .provide-text h2 {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 54px;
+  }
+  .provide-text p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .provide-text span {
+    display: block;
+  }
+  .shape-card h3 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 44px;
+  }
+  .shape-card p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .shape-card a {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+  }
+}
