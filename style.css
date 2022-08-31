@@ -741,3 +741,52 @@ hr {
     gap: 0.4rem;
   }
 }
+/* join us section */
+.join-us-section {
+  background-color: var(--black);
+  text-align: center;
+  color: white;
+}
+.join-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 683px;
+  justify-content: center;
+  align-items: center;
+  height: 633px;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+.join-us-wrapper br {
+  display: none;
+}
+.join-us-header {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.join-us-description {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+/*     join us section-desktop */
+@media (min-width: 992px) {
+  .join-us-wrapper {
+    height: 589px;
+  }
+  .join-us-wrapper br {
+    display: block;
+  }
+  .join-us-header {
+    font-weight: 600;
+    font-size: 82px;
+    line-height: 71px;
+  }
+  .join-us-description {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    opacity: 0.7;
+  }
+}
