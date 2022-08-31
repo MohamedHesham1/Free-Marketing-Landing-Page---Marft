@@ -389,7 +389,7 @@ hr {
   width: 466px;
   display: flex;
   flex-flow: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .next-level-header {
   font-weight: 600;
@@ -606,7 +606,7 @@ hr {
     padding: 3rem;
     width: 370px;
   }
-  /*  text styling */
+  /*    text-styling */
   .provide-text {
     display: flex;
     flex-direction: column;
@@ -640,5 +640,104 @@ hr {
     font-weight: 700;
     font-size: 23px;
     line-height: 31px;
+  }
+}
+/* review section  */
+.review-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 7rem 0;
+}
+.review-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-review {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.user-review-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+.user-review-wrapper br {
+  display: none;
+}
+.user-name h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.user-name p {
+  font-weight: 500;
+  color: rgba(86, 86, 92, 1);
+}
+.dots {
+  padding: 1rem 0;
+}
+.user-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-img p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+/*    review section-desktop */
+@media (min-width: 992px) {
+  .review-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 7rem 0;
+  }
+  .review-content-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14rem;
+  }
+  /*    user-review-styling */
+  .user-review-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+  .user-review {
+    font-size: 42px;
+    line-height: 47px;
+  }
+  .user-review-wrapper br {
+    display: block;
+  }
+  .user-profile {
+    display: flex;
+    gap: 1rem;
+  }
+  .user-name h3 {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .user-name p {
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+  .dots {
+    align-self: flex-end;
+  }
+  .user-img {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.4rem;
   }
 }
