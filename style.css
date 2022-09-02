@@ -3,7 +3,6 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
-
 *,
 *:before,
 *:after {
@@ -95,8 +94,9 @@ ul a {
 hr {
   display: none;
 }
-.header-icon{
-  color: filter: invert(99%) sepia(4%) saturate(716%) hue-rotate(323deg) brightness(117%) contrast(100%);;
+.header-icon {
+  filter: invert(99%) sepia(4%) saturate(716%) hue-rotate(323deg)
+    brightness(117%) contrast(100%);
 }
 /* hamburger menu styling */
 .nav-links {
@@ -1095,11 +1095,13 @@ footer .logo {
     gap: 6rem;
     margin-bottom: 57px;
   }
+  .contacts-info p {
+    line-height: 38px;
+    letter-spacing: -0.03em;
+  }
   .contact-wrapper {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
     color: #ffff;
     font-weight: 400;
     font-size: 36px;
