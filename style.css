@@ -94,10 +94,7 @@ ul a {
 hr {
   display: none;
 }
-.header-icon {
-  filter: invert(99%) sepia(4%) saturate(716%) hue-rotate(323deg)
-    brightness(117%) contrast(100%);
-}
+
 /* hamburger menu styling */
 .nav-links {
   display: flex;
