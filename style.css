@@ -817,7 +817,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: center;
+  align-items: flex-start;
 }
 .blog-head {
   display: flex;
