@@ -95,7 +95,9 @@ ul a {
 hr {
   display: none;
 }
-
+.header-icon{
+  color: filter: invert(99%) sepia(4%) saturate(716%) hue-rotate(323deg) brightness(117%) contrast(100%);;
+}
 /* hamburger menu styling */
 .nav-links {
   display: flex;
@@ -994,8 +996,7 @@ footer .logo {
   gap: 0.1rem;
   color: #ffff;
 }
-.contact-wrapper:nth-of-type(1) {
-}
+
 .footer-line {
   display: block;
   width: 100%;
@@ -1081,7 +1082,8 @@ footer .logo {
     border-radius: 0 15px 15px 0;
   }
   .hero-form button:hover {
-    background: #0b7dda;
+    background-color: var(--gold);
+    color: var(--black);
   }
   .hero-form::after {
     content: "";
