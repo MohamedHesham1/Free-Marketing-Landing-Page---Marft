@@ -212,7 +212,7 @@ hr {
 .hero-img {
   display: none;
 }
-.hero-header {
+.hero-content .hero-header {
   font-size: 3rem;
   font-weight: 700;
   line-height: 2.5rem;
