@@ -848,7 +848,7 @@ hr {
   background-color: var(--gold);
   color: var(--black);
 }
-/*  */
+/*  blogs section-tablet*/
 @media (max-width: 991px) {
   .blog-btn {
     order: 1;
@@ -958,7 +958,10 @@ footer .logo {
   width: 70%;
   background: transparent;
   border-radius: 15px 0 0 15px;
+  color: #ffff;
+  opacity: 0.7;
 }
+
 .hero-form button {
   float: left;
   width: 30%;
@@ -1003,6 +1006,10 @@ footer .logo {
 .footer-policy div {
   display: flex;
   gap: 1rem;
+}
+.footer-policy div a {
+  color: #ffff;
+  text-decoration: none;
 }
 /*    footer desktop */
 @media (min-width: 992px) {
@@ -1120,4 +1127,3 @@ footer .logo {
     margin-bottom: 47px;
   }
 }
-/*  */
