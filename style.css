@@ -683,15 +683,7 @@ hr {
 .dots {
   padding: 1rem 0;
 }
-.user-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.user-img p {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
+
 /*    review section-desktop */
 @media (min-width: 992px) {
   .review-section {
@@ -736,12 +728,6 @@ hr {
   }
   .dots {
     align-self: flex-end;
-  }
-  .user-img {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 0.4rem;
   }
 }
 /* join us section */
@@ -1125,3 +1111,4 @@ footer .logo {
     margin-bottom: 47px;
   }
 }
+/*  */
