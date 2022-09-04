@@ -422,6 +422,7 @@ hr {
   border: none;
   align-self: center;
   transition: 0.3s ease-in;
+  cursor: pointer;
 }
 .about-us-btn:hover {
   background-color: var(--gold);
