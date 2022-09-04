@@ -819,6 +819,9 @@ hr {
   text-decoration: none;
   align-self: flex-start;
 }
+.read-more:hover {
+  text-decoration: underline;
+}
 .underline {
   text-decoration: underline;
 }
@@ -844,7 +847,12 @@ hr {
   background-color: var(--gold);
   color: var(--black);
 }
-
+/*  */
+@media (max-width: 991px) {
+  .blog-btn {
+    order: 1;
+  }
+}
 /*    blogs section-desktop */
 @media (min-width: 992px) {
   .blogs {
@@ -854,9 +862,9 @@ hr {
     flex-direction: row;
     height: 757px;
     align-items: center;
-    gap: 0;
+    gap: 76px;
     justify-content: space-around;
-    padding: 0px 9rem;
+    max-width: 1170px;
   }
   .blog-post {
     max-width: 547px;
