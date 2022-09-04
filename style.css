@@ -256,7 +256,7 @@ hr {
     align-items: flex-start;
     padding-right: 2rem;
   }
-  .hero-header {
+  .hero-content .hero-header {
     font-size: 82px;
     font-weight: 700;
     line-height: 73px;
